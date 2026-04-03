@@ -20,21 +20,39 @@ body {
 
 /* Container centers everything */
 .hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  height: 100vh;
   text-align: center;
+  padding: 20px;
 }
 
 /* Logo */
 .logo {
-  width: 90%;
-  max-width: 500px;
+  width: 85%;
+  max-width: 420px;
+  height: auto;
 
   filter: drop-shadow(0 10px 25px rgba(0,0,0,0.2));
 }
 
 /* Button */
 .shop-btn {
+  margin-top: 20px;
+
+  background: linear-gradient(90deg, #d4af37, #ffd700);
+  color: black;
+  padding: 14px 28px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  font-size: 16px;
+
   display: inline-block;
-  margin-top: 25px;
+}
 
   background: linear-gradient(90deg, #d4af37, #ffd700);
   color: black;
@@ -49,4 +67,14 @@ body {
 
 .shop-btn:hover {
   transform: scale(1.05);
+}
+@media (max-width: 600px) {
+  .logo {
+    width: 90%;
+  }
+
+  .shop-btn {
+    width: 70%;
+    text-align: center;
+  }
 }
