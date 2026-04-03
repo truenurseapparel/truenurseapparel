@@ -1,37 +1,39 @@
-/* Full page background */
-body {
+/* Reset everything */
+* {
   margin: 0;
-  height: 100vh;
-  overflow: hidden;
-  font-family: Arial, sans-serif;
-
-  background: url('background.png') no-repeat center center fixed;
-  background-size: cover;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* HERO = full screen center */
-.hero {
+/* Full page background */
+body {
+  height: 100vh;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
 
-  height: 100vh;
+  font-family: Arial, sans-serif;
+
+  background: url('background.png') no-repeat center center;
+  background-size: cover;
+}
+
+/* Container centers everything */
+.hero {
   text-align: center;
 }
 
-/* LOGO (this becomes the star of the page) */
+/* Logo */
 .logo {
   width: 90%;
   max-width: 500px;
-  height: auto;
 
-  /* ✨ soft shadow glow effect */
   filter: drop-shadow(0 10px 25px rgba(0,0,0,0.2));
 }
 
-/* BUTTON */
+/* Button */
 .shop-btn {
+  display: inline-block;
   margin-top: 25px;
 
   background: linear-gradient(90deg, #d4af37, #ffd700);
